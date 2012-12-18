@@ -30,6 +30,7 @@ public class Cliente implements Serializable{
 	private int Semana;
 	private String diaVisita;
 	private boolean visitado;
+	private RespuestaWS respuesta;
 	public String getCliCodigo() {
 		return cliCodigo;
 	}
@@ -179,5 +180,11 @@ public class Cliente implements Serializable{
 	}
 	public void setVisitado(boolean visitado) {
 		this.visitado = visitado;
+	}
+	public RespuestaWS getRespuesta() {
+		return respuesta;
+	}
+	public void setRespuesta(RespuestaWS respuesta) {
+		this.respuesta = respuesta;
 	}
 }

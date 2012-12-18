@@ -24,6 +24,7 @@ public class Articulo implements Serializable{
 	private int unidadesFardo;
 	private String link;
 	private String artOfertaFecha;
+	private RespuestaWS respuesta;
 	public String getArtCodigo() {
 		return artCodigo;
 	}
@@ -137,6 +138,12 @@ public class Articulo implements Serializable{
 	}
 	public void setArtOfertaFecha(String artOfertaFecha) {
 		this.artOfertaFecha = artOfertaFecha;
+	}
+	public RespuestaWS getRespuesta() {
+		return respuesta;
+	}
+	public void setRespuesta(RespuestaWS respuesta) {
+		this.respuesta = respuesta;
 	}
 	
 }
