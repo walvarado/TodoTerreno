@@ -10,14 +10,182 @@ package com.researchmobile.todoterreno.view;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int color_label__dialog_textview=0x7f050002;
+        public static final int color_label_textview=0x7f050001;
+        public static final int color_title_textview=0x7f050000;
+        public static final int off_white=0x7f050003;
+    }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int abonar=0x7f020000;
+        public static final int agregar=0x7f020001;
+        public static final int background_listview=0x7f020002;
+        public static final int caja_dialog_background=0x7f020003;
+        public static final int clear=0x7f020004;
+        public static final int clientes_visitados=0x7f020005;
+        public static final int cuentas=0x7f020006;
+        public static final int enviar=0x7f020007;
+        public static final int gtt_mercadisa=0x7f020008;
+        public static final int horizontal_separator=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int icon_research_mobile=0x7f02000b;
+        public static final int logo_gama=0x7f02000c;
+        public static final int logo_mercadisa=0x7f02000d;
+        public static final int motivo_no_compra=0x7f02000e;
+        public static final int pedidos=0x7f02000f;
+        public static final int principal_background=0x7f020010;
+        public static final int productos=0x7f020011;
+        public static final int research_mobile=0x7f020012;
+        public static final int salir=0x7f020013;
+        public static final int secundary_background=0x7f020014;
+        public static final int sincronizar=0x7f020015;
+        public static final int tomar_pedido=0x7f020016;
+        public static final int valor_dialog_background=0x7f020017;
+        public static final int values_background=0x7f020018;
+        public static final int vertical_separator=0x7f020019;
+        public static final int vertical_separator_esfume=0x7f02001a;
+    }
+    public static final class id {
+        public static final int horizontalScrollView1=0x7f070010;
+        public static final int imageView1=0x7f070008;
+        public static final int linearLayout1=0x7f070001;
+        public static final int linearLayout2=0x7f070006;
+        public static final int linearLayout3=0x7f07000a;
+        public static final int linearLayout4=0x7f070011;
+        public static final int linearLayout5=0x7f070012;
+        public static final int linearLayout6=0x7f07000d;
+        public static final int linearLayout7=0x7f070009;
+        public static final int login_contrasenia_edittext=0x7f070005;
+        public static final int login_entrar_button=0x7f070007;
+        public static final int login_usuario_edittext=0x7f070003;
+        public static final int rol_borrar_imagebutton=0x7f07000f;
+        public static final int rol_buscar_editText=0x7f07000e;
+        public static final int rol_dia_textview=0x7f07000c;
+        public static final int rol_lista_clientes_listView=0x7f070019;
+        public static final int rol_semana_textview=0x7f07000b;
+        public static final int textView=0x7f070016;
+        public static final int textView1=0x7f070000;
+        public static final int textView2=0x7f070002;
+        public static final int textView3=0x7f070004;
+        public static final int textView4=0x7f070013;
+        public static final int textView5=0x7f070014;
+        public static final int textView6=0x7f070015;
+        public static final int textView_nit=0x7f070018;
+        public static final int textView_telefono=0x7f070017;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int login=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int rol=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
+        public static final int app_name=0x7f040040;
+        public static final int clientes_visitados_tabla_cliente=0x7f040000;
+        public static final int clientes_visitados_tabla_hora=0x7f040002;
+        public static final int clientes_visitados_tabla_total=0x7f040001;
+        public static final int detalle_cliente_codigo_textview=0x7f040004;
+        public static final int detalle_cliente_contacto_textview=0x7f040006;
+        public static final int detalle_cliente_descuento_textview=0x7f04000c;
+        public static final int detalle_cliente_dias_credito_textview=0x7f040009;
+        public static final int detalle_cliente_direccion_textview=0x7f040007;
+        public static final int detalle_cliente_empresa_textview=0x7f040005;
+        public static final int detalle_cliente_limite_textview=0x7f04000a;
+        public static final int detalle_cliente_saldo_textview=0x7f04000b;
+        public static final int detalle_cliente_telefono_textview=0x7f040008;
+        public static final int detalle_cliente_titulo_textview=0x7f040003;
+        public static final int estado_de_cuenta_cuentas_por_cobrar=0x7f040041;
+        /**  DIALOG 
+         */
+        public static final int estados_cuenta_dialog_Total=0x7f04001a;
+        public static final int estados_cuenta_dialog_abono=0x7f04001b;
+        public static final int estados_de_cuenta_abono=0x7f040012;
+        public static final int estados_de_cuenta_detalle_abono=0x7f040018;
+        /**  TABLA DE DETALLE 
+         */
+        public static final int estados_de_cuenta_detalle_doc=0x7f040014;
+        public static final int estados_de_cuenta_detalle_documento=0x7f04001d;
+        public static final int estados_de_cuenta_detalle_fecha=0x7f040019;
+        public static final int estados_de_cuenta_detalle_recibo=0x7f040016;
+        public static final int estados_de_cuenta_detalle_saldo=0x7f040015;
+        public static final int estados_de_cuenta_detalle_tipo_pago=0x7f040017;
+        public static final int estados_de_cuenta_dialog_documento=0x7f04001c;
+        public static final int estados_de_cuenta_fecha=0x7f040010;
+        /**  TABLA DE FACTURAS 
+         */
+        public static final int estados_de_cuenta_mov_documento=0x7f04000f;
+        public static final int estados_de_cuenta_saldo=0x7f040013;
+        public static final int estados_de_cuenta_string_saldo_total=0x7f04000e;
+        /**   
+         */
+        public static final int estados_de_cuenta_titulo_textview=0x7f04000d;
+        public static final int estados_de_cuenta_total=0x7f040011;
+        public static final int existencia_articulo_textview=0x7f04001f;
+        public static final int existencia_existencia_textview=0x7f040021;
+        public static final int existencia_precio_textview=0x7f040020;
+        public static final int existencia_titulo_textview=0x7f04001e;
+        public static final int hello=0x7f04003f;
+        public static final int lista_pedidos_string_codigo=0x7f040023;
+        public static final int lista_pedidos_string_hora=0x7f040024;
+        public static final int lista_pedidos_string_pedido=0x7f040026;
+        public static final int lista_pedidos_string_titulo=0x7f040022;
+        public static final int lista_pedidos_string_total=0x7f040025;
+        public static final int login_cancelar_button=0x7f040029;
+        public static final int login_contrasenia_hint=0x7f04002d;
+        public static final int login_contrasenia_textview=0x7f04002b;
+        public static final int login_entrar_button=0x7f040028;
+        public static final int login_titulo_textview=0x7f040027;
+        public static final int login_usuario_hint=0x7f04002c;
+        public static final int login_usuario_textview=0x7f04002a;
+        public static final int motivonocompra_cancelar_button=0x7f040032;
+        public static final int motivonocompra_enviar_button=0x7f040031;
+        public static final int motivonocompra_motivo_textview=0x7f04002f;
+        public static final int motivonocompra_otro_textview=0x7f040030;
+        public static final int motivonocompra_title_textview=0x7f04002e;
+        public static final int principalmenu_titulo_textview=0x7f040033;
+        public static final int rol_buscar_cliente_edittext=0x7f04003e;
+        public static final int rol_dia_textview=0x7f040036;
+        public static final int rol_mostrar_button=0x7f040037;
+        public static final int rol_semana_textview=0x7f040035;
+        public static final int rol_tabla_cliente_textview=0x7f040038;
+        public static final int rol_tabla_contacto_textview=0x7f04003a;
+        public static final int rol_tabla_direccion_textview=0x7f04003b;
+        public static final int rol_tabla_empresa_textview=0x7f040039;
+        public static final int rol_tabla_nit_textview=0x7f04003d;
+        public static final int rol_tabla_telefono_textview=0x7f04003c;
+        public static final int rol_titulo_textview=0x7f040034;
+        public static final int tomar_pedido_bonificacion_tabla_textview=0x7f040055;
+        public static final int tomar_pedido_buscar_articulo_edittext=0x7f040044;
+        public static final int tomar_pedido_cajas_tabla_textview=0x7f040051;
+        public static final int tomar_pedido_categoria_tabla_textview=0x7f04004f;
+        public static final int tomar_pedido_codigo_tabla_textview=0x7f04004e;
+        public static final int tomar_pedido_dialog_cajas_textview=0x7f040058;
+        public static final int tomar_pedido_dialog_unidades_textview=0x7f040059;
+        public static final int tomar_pedido_existencia_tabla_textview=0x7f040054;
+        public static final int tomar_pedido_id_producto_tabla_textview=0x7f040045;
+        public static final int tomar_pedido_nombre_proveedor_tabla_textview=0x7f04004d;
+        public static final int tomar_pedido_nombre_tabla_textview=0x7f040046;
+        public static final int tomar_pedido_precio_a_tabla_textview=0x7f040047;
+        public static final int tomar_pedido_precio_b_tabla_textview=0x7f040048;
+        public static final int tomar_pedido_precio_c_tabla_textview=0x7f040049;
+        public static final int tomar_pedido_precio_d_tabla_textview=0x7f04004a;
+        public static final int tomar_pedido_precio_e_tabla_textview=0x7f04004b;
+        public static final int tomar_pedido_precio_tabla_textview=0x7f040052;
+        public static final int tomar_pedido_presentacion_tabla_textview=0x7f040053;
+        public static final int tomar_pedido_proveedor_tabla_textview=0x7f04004c;
+        public static final int tomar_pedido_titulo_textview=0x7f040042;
+        public static final int tomar_pedido_total_tabla_textview=0x7f040057;
+        public static final int tomar_pedido_total_textview=0x7f040043;
+        public static final int tomar_pedido_unidades_tabla_textview=0x7f040050;
+        public static final int tomar_pedido_valor_tabla_textview=0x7f040056;
+        public static final int ver_pedido_title_textview=0x7f04005a;
+    }
+    public static final class style {
+        public static final int CodeFont_label=0x7f060001;
+        public static final int CodeFont_label_dialog=0x7f060004;
+        public static final int CodeFont_label_value=0x7f060002;
+        public static final int CodeFont_label_value_dialog=0x7f060003;
+        public static final int CodeFont_label_value_listview_productos=0x7f060005;
+        public static final int CodeFont_title=0x7f060000;
+        public static final int ListView=0x7f060006;
     }
 }
