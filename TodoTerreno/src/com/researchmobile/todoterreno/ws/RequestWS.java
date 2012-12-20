@@ -178,7 +178,7 @@ public class RequestWS {
 	}
 	
 	// Metodo que retorna la lista de clientes obtenidas desde el WS se necesita como parametros el cat‡logo y la ruta del vendedor
-		public ListaClientes listaArticulos(String portafolio, String ruta){
+		public ListaArticulos listaArticulos(String portafolio, String ruta){
 			String url = WS_LOGIN + "a=" + portafolio + "&" + "idportafolio=" + ruta; // string de conexi—n
 
 			JSONObject jsonObject = ConnectWS.obtenerJson(url);
@@ -194,18 +194,37 @@ public class RequestWS {
 							JSONArray articulosJsonArray = jsonObject.getJSONArray("articulos"); // obtengo el Array de clientes que viene el el JSON
 							Articulo[] articulos = new Articulo[articulosJsonArray.length()];
 							for(int i=0;i<articulosJsonArray.length();i++){
-								JSONObject articulossJsonObject = articulosJsonArray.getJSONObject(i);
+								JSONObject articulosJsonObject = articulosJsonArray.getJSONObject(i);
 								Articulo temp = new Articulo();
 								
+								temp.setArtCodigo(nullToString(articulosJsonObject.getString("artcodigo")));
+								temp.setArtCodigoAlterno(nullToString(articulosJsonObject.getString("artcodigoalterno")));
+								temp.setArtDescripcion(nullToString(nullToString(articulosJsonObject.getString("artdescripcion"))));
+								temp.setArtIngrediente(nullToString(articulosJsonObject.getString("artingrediente")));
+								temp.setArtOfertaFecha(nullToString(articulosJsonObject.getString("artofertafecha")));
+								temp.setCatalogo(nullToString(articulosJsonObject.getString("artcatalogo")));
+								temp.setCategoria(nullToString(articulosJsonObject.getString("codcategoria")));
+								temp.setDivision(nullToString(articulosJsonObject.getString("coddivision")));
+								temp.setFoto(nullToString(articulosJsonObject.getString("artfoto")));
+								temp.setLink(nullToString(articulosJsonObject.getString("link")));
+								temp.setObservaciones(nullToString(articulosJsonObject.getString("artobservaciones")));
+								temp.setOfertado(Boolean.parseBoolean(nullToString(articulosJsonObject.getString("artofertado"))));
+								temp.setPrecioDes1(Float.parseFloat(nullToString(articulosJsonObject.getString("artpreciodes1"))));
+								temp.setPrecioDes2(Float.parseFloat(nullToString(articulosJsonObject.getString("artpreciodes2"))));
+								temp.setPrecioDes3(Float.parseFloat(nullToString(articulosJsonObject.getString("artpreciodes3"))));
+								temp.setPrecioOferta(Float.parseFloat(nullToString(articulosJsonObject.getString("artprecioferta"))));
+								temp.setPrecioVenta(Float.parseFloat(nullToString(articulosJsonObject.getString("artprecioventa"))));
+							    temp.setSector(nullToString(articulosJsonObject.getString("codsector")));
+							    temp.setUnidadesFardo(Integer.parseInt(nullToString(articulosJsonObject.getString("artunidadesfardo"))));
 								
-								articulos[i]=temp;
+							    articulos[i]=temp; // asigno el articulo temporal al Array de articulos
 								
 							} listaArticulos.setArticulo(articulos);
-							
+							  
 						}else{
-							System.out.println("No se obtuvo el Array de clientes");
+							System.out.println("No se obtuvo el Array de articulos");
 						}
-						return listaClientes;
+						return listaArticulos;
 					}else{
 						System.out.println("No se obtuvo resultado del WS");
 						return null;
