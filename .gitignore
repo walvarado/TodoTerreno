@@ -5,7 +5,7 @@
 *.pydevproject
 .project
 .metadata
-gen/
+TodoTerreno/gen/
 bin/
 tmp/
 *.tmp
