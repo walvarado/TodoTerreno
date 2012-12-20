@@ -210,12 +210,12 @@ public class RequestDB {
 			 		Iterator iter = categories.iterator();
 			 		while(iter.hasNext())
 			 		{
-			 			Entity ent = (Entity)iter.next();
-			 			usuario.setId(ent.getString("id"));
-			 			usuario.setUsuario(ent.getString("usuario"));
-			 			usuario.setPassword(ent.getString("password"));
-			 			usuario.setLastLogin(ent.getString("lastLogin"));
-			 			usuario.setActivo(ent.getString("activo"));
+			 			Entity datousuario = (Entity)iter.next();
+			 			usuario.setId(datousuario.getString("id"));
+			 			usuario.setUsuario(datousuario.getString("usuario"));
+			 			usuario.setPassword(datousuario.getString("password"));
+			 			usuario.setLastLogin(datousuario.getString("lastLogin"));
+			 			usuario.setActivo(datousuario.getString("activo"));
 			 			
 			 		}
 			 	}
@@ -223,7 +223,35 @@ public class RequestDB {
 			return usuario;
 		}
 		
-		  
-	//ultima llave
-	}
+		public Vendedor vendedorDB()
+		{
+			Vendedor vendedor = new Vendedor();
+				List<Entity> categories = DataFramework.getInstance().getEntityList("vendedor");
+				{
+					Iterator c = categories.iterator();
+					while(c.hasNext())
+					{
+						Entity datovendedor = (Entity)c.next();
+						vendedor.setVendedor(datovendedor.getString("vendedor"));
+						vendedor.setNombre(datovendedor.getString("nombre"));
+						vendedor.setDireccion(datovendedor.getString("direccion"));
+						vendedor.setTelefono(datovendedor.getString("telefono"));
+						vendedor.setIdentificacion(datovendedor.getString("identificacion"));
+						vendedor.setComision(datovendedor.getString("comision"));
+						vendedor.setRuta(datovendedor.getString("ruta"));
+						vendedor.setClidesnormal(datovendedor.getString("clidesnormal"));
+						vendedor.setClides1(datovendedor.getString("clides1"));
+						vendedor.setClides2(datovendedor.getString("clides2"));
+						vendedor.setClides3(datovendedor.getString("clides3"));
+						vendedor.setTurno(datovendedor.getString("turno"));
+						vendedor.setOtnumero(datovendedor.getString("otnumero"));
+						vendedor.setIdusuario(datovendedor.getString("idusuario"));
+						
+					}
+				}
+			
+			return vendedor;
+		}
+//ultima llave
+}
 
