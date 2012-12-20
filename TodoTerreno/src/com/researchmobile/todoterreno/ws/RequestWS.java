@@ -177,7 +177,7 @@ public class RequestWS {
 		
 	}
 	
-/*	// Metodo que retorna la lista de clientes obtenidas desde el WS se necesita como parametros el cat‡logo y la ruta del vendedor
+	// Metodo que retorna la lista de clientes obtenidas desde el WS se necesita como parametros el cat‡logo y la ruta del vendedor
 		public ListaClientes listaArticulos(String portafolio, String ruta){
 			String url = WS_LOGIN + "a=" + portafolio + "&" + "idportafolio=" + ruta; // string de conexi—n
 
@@ -197,9 +197,10 @@ public class RequestWS {
 								JSONObject articulossJsonObject = articulosJsonArray.getJSONObject(i);
 								Articulo temp = new Articulo();
 								
+								
 								articulos[i]=temp;
 								
-							} listaClientes.setCliente(clientes);
+							} listaArticulos.setArticulo(articulos);
 							
 						}else{
 							System.out.println("No se obtuvo el Array de clientes");
@@ -215,7 +216,7 @@ public class RequestWS {
 					return null;
 					}
 			
-		}*/
+		}
 	
 	// Metodo convierte un valor null ingresado a un String y devuelve un espacio en blanco
 	public String nullToString(String variable){
