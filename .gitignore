@@ -5,6 +5,7 @@
 *.pydevproject
 .project
 .metadata
+gen/
 bin/
 tmp/
 *.tmp
@@ -15,7 +16,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
-gen/R.java
+
 
 # External tool builders
 .externalToolBuilders/
